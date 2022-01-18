@@ -19,7 +19,7 @@ namespace CakesMarket.DBContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            
         }
     }
 }
