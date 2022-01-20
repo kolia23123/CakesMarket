@@ -10,6 +10,6 @@ namespace CakesMarket.Models.Repository
         public IEnumerable<Cake> GetAll();
         public void Add(Cake cake);
         public void Update(Cake cake);
-        public void Delete(int idCake);
+        public void Delete(Cake cake);
     }
 }

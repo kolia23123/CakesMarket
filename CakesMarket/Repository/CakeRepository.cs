@@ -14,13 +14,13 @@ namespace CakesMarket.Web.Repository
         }
         public void Add(Cake cake)
         {
-            _dbContext.AddRange(cake);
+            _dbContext.Cakes.AddRange(cake);
             _dbContext.SaveChanges();
         }
 
-        public void Delete(int idCake)
+        public void Delete(Cake cake)
         {
-            _dbContext.Remove(idCake);
+            _dbContext.Cakes.Remove(cake);
             _dbContext.SaveChanges();
         }
 
@@ -31,7 +31,7 @@ namespace CakesMarket.Web.Repository
 
         public void Update(Cake cake)
         {
-            _dbContext.Update(cake);
+            _dbContext.Cakes.Update(cake);
             _dbContext.SaveChanges();   
         }
     }

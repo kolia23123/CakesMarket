@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CakesMarket.Models.Model.Cake>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Cake</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Price</td>
+            <td></td>
+        </tr>
+        @foreach (var cake in Model)
+            {
+            <tr>
+                <td>@cake.Name</td>
+                <td>@cake.CategotyId</td>
+                <td>@cake.Price</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

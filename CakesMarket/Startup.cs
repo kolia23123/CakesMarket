@@ -1,5 +1,8 @@
 using CakesMarket.DBContext;
 using CakesMarket.Models;
+using CakesMarket.Models.Repository;
+using CakesMarket.Web.Repository;
+using CakesMarket.Web.UOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +31,12 @@ namespace CakesMarket
         {
             string dbConnectionString = Configuration.GetConnectionString(ConnectionDB.DbConnectionString);
             services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(dbConnectionString).UseLazyLoadingProxies(true));
+            //services.AddAutoMapper((serviceProvider, mapper) =>
+            //{
+            //    mapper.AddProfile(new MappingProfile());
+            //}, typeof(Startup));
+            services.AddScoped<ICakeRepository, CakeRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
