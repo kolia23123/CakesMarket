@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace CakesMarket.Web.Repository
 {
-    public class IngredientRepository : IIngiedientRepository
+    public class IngridientRepository : IIngridientRepository
     {
         private readonly DatabaseContext _databaseContext;
-        public IngredientRepository(DatabaseContext databaseContext)
+        public IngridientRepository(DatabaseContext databaseContext)
         {
             this._databaseContext = databaseContext;
         }

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CakesMarket.Models.Model;
-using CakesMarket.Models.VIewModel;
+using CakesMarket.Models.ViewModel;
 
 namespace CakesMarket.Web.Profiles
 {

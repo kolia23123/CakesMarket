@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CakesMarket.Models.Model.Cake>
+﻿@model CakesMarket.Models.ViewModel.CakesListViewModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -16,11 +16,11 @@
             <td>Price</td>
             <td></td>
         </tr>
-        @foreach (var cake in Model)
+        @foreach (var cake in Model.Cakes)
             {
             <tr>
                 <td>@cake.Name</td>
-                <td>@cake.CategotyId</td>
+                <td>@cake.Categoty</td>
                 <td>@cake.Price</td>
             </tr>
         }

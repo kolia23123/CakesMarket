@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CakesMarket.Models.Repository
 {
-    public interface IIngiedientRepository
+    public interface IIngridientRepository
     {
         public IEnumerable<Ingredient> GetAll();
         public void Add(Ingredient ingredient);

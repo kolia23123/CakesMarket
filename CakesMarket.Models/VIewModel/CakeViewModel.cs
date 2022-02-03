@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CakesMarket.Models.VIewModel
+namespace CakesMarket.Models.ViewModel
 {
     public class CakeViewModel
     {

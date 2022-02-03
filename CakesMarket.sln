@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CakesMarket.Web", "CakesMarket\CakesMarket.Web.csproj", "{CF6E581C-2284-4C78-95E0-E132D775D9B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakesMarket.DBContext", "CakesMarket.DBContext\CakesMarket.DBContext.csproj", "{D293E301-74B6-4F7F-AACA-4AFA684F8227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CakesMarket.DBContext", "CakesMarket.DBContext\CakesMarket.DBContext.csproj", "{D293E301-74B6-4F7F-AACA-4AFA684F8227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakesMarket.Models", "CakesMarket.Models\CakesMarket.Models.csproj", "{BD518EBC-B6F2-4A2B-87D9-D74A8B75DDEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CakesMarket.Models", "CakesMarket.Models\CakesMarket.Models.csproj", "{BD518EBC-B6F2-4A2B-87D9-D74A8B75DDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakesMarket.UnitTests", "CakesMarket.UnitTests\CakesMarket.UnitTests.csproj", "{04C96308-3DF6-43F0-843E-AB7AD32A9141}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CakesMarket.UnitTests", "CakesMarket.UnitTests\CakesMarket.UnitTests.csproj", "{04C96308-3DF6-43F0-843E-AB7AD32A9141}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,22 +1,33 @@
-﻿using CakesMarket.DBContext;
-using CakesMarket.Models.Repository;
-using CakesMarket.Web.Repository;
+﻿using CakesMarket.Models.Model;
+using CakesMarket.Models.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 namespace CakesMarket.Web.Controllers
 {
     public class CakeController : Controller
     {
-        private readonly ICakeRepository _cakeRepository;
+        private readonly ICakeService _cakeService;
 
-        public CakeController(DatabaseContext databaseContext)
+        public CakeController(ICakeService cakeService )
         {
-            _cakeRepository = new CakeRepository(databaseContext);
+            this._cakeService = cakeService;
         }
         public IActionResult Index()
         {
-            return View(_cakeRepository.GetAll());
+            return View(_cakeService.GetAll());
+        }
+
+        public ActionResult AddCakes()
+        {
+            return View("AddCakes");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddCakes(Cake cake)
+        {
+            _cakeService.Add(cake);
+            return RedirectToAction("Index");
         }
     }
 }
